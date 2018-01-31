@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		D96894BB2020D0150016941E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96894BA2020D0150016941E /* AppDelegate.swift */; };
 		D96894BD2020D0150016941E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96894BC2020D0150016941E /* ViewController.swift */; };
-		D96894C02020D0150016941E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96894BE2020D0150016941E /* Main.storyboard */; };
+		D96894C02020D0150016941E /* MiniTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96894BE2020D0150016941E /* MiniTasks.storyboard */; };
 		D96894C22020D0150016941E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96894C12020D0150016941E /* Assets.xcassets */; };
 		D96894C52020D0150016941E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96894C32020D0150016941E /* LaunchScreen.storyboard */; };
+		D96894CF2020DDAA0016941E /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96894CE2020DDAA0016941E /* AddTaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D96894B72020D0150016941E /* MiniTasks App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniTasks App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96894BA2020D0150016941E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96894BC2020D0150016941E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D96894BF2020D0150016941E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D96894BF2020D0150016941E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MiniTasks.storyboard; sourceTree = "<group>"; };
 		D96894C12020D0150016941E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96894C42020D0150016941E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96894C62020D0150016941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96894CE2020DDAA0016941E /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		D96894B92020D0150016941E /* MiniTasks App */ = {
 			isa = PBXGroup;
 			children = (
-				D96894BA2020D0150016941E /* AppDelegate.swift */,
-				D96894BC2020D0150016941E /* ViewController.swift */,
-				D96894BE2020D0150016941E /* Main.storyboard */,
-				D96894C12020D0150016941E /* Assets.xcassets */,
+				D96894CD2020D0410016941E /* View */,
+				D96894CC2020D0270016941E /* Controller */,
 				D96894C32020D0150016941E /* LaunchScreen.storyboard */,
 				D96894C62020D0150016941E /* Info.plist */,
 			);
 			path = "MiniTasks App";
+			sourceTree = "<group>";
+		};
+		D96894CC2020D0270016941E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D96894BA2020D0150016941E /* AppDelegate.swift */,
+				D96894BC2020D0150016941E /* ViewController.swift */,
+				D96894CE2020DDAA0016941E /* AddTaskVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D96894CD2020D0410016941E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D96894BE2020D0150016941E /* MiniTasks.storyboard */,
+				D96894C12020D0150016941E /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +144,7 @@
 			files = (
 				D96894C52020D0150016941E /* LaunchScreen.storyboard in Resources */,
 				D96894C22020D0150016941E /* Assets.xcassets in Resources */,
-				D96894C02020D0150016941E /* Main.storyboard in Resources */,
+				D96894C02020D0150016941E /* MiniTasks.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96894BD2020D0150016941E /* ViewController.swift in Sources */,
+				D96894CF2020DDAA0016941E /* AddTaskVC.swift in Sources */,
 				D96894BB2020D0150016941E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,12 +164,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D96894BE2020D0150016941E /* Main.storyboard */ = {
+		D96894BE2020D0150016941E /* MiniTasks.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D96894BF2020D0150016941E /* Base */,
 			);
-			name = Main.storyboard;
+			name = MiniTasks.storyboard;
 			sourceTree = "<group>";
 		};
 		D96894C32020D0150016941E /* LaunchScreen.storyboard */ = {
